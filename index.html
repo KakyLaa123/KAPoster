@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>КАПостер</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h2 class="hello">Здравствуйте, <span id="persone-name"></span>!</h2>
+            <div class="filter">
+                <div class="filter-liked">
+                    <label for="likedPosts">
+                        Показать лайкнутые
+                    </label>
+                    <label for="likedPosts" class="switch"><input type="checkbox" id="likedPosts"><span class="toggle"></span></label>
+                </div>
+                <div class="search-filter">
+                    <input type="text" id="searchPosts" class="search" placeholder="Поиск">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="posts">
+            <ul class="posts-list">
+            </ul>
+        </div>
+        <div class="messages-sending-box">
+            <form action="#" method="post" class="messages">
+                <textarea name="messageText" id="messageText" placeholder="Введите новость" required></textarea>
+                <input type="submit" value="Отправить" id="messageSending" disabled="true" class="opacity-half">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-main">
+            <span class="creator">
+                Создатель: Кучмин Александр Алексеевич
+            </span>
+            <ul class="contacts-list">
+                <li>Контакты:</li>
+                <li><a href="https://vk.com/kakylaa123" class="contact-img">
+                    <img src="/img/icons_vk.png" alt="VK">
+                </a></li>
+                <li><a href="https://github.com/KakyLaa123" class="contact-img">
+                    <img src="/img/icons_git.png" alt="GitHub">
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

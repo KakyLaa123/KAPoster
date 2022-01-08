@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #EDEEF0;
+}
+
+header{
+    background: linear-gradient(90deg, #85b0f2,#00ddcf,#ede067);
+    color: white;
+    min-height: 8vh;
+    max-height: auto;
+}
+
+input, textarea{
+    outline: none;
+}
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    min-height: 82vh;
+    max-height: auto;
+}
+
+.header{
+    padding-top: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hello{
+    margin: 0;
+}
+
+.posts{
+    height: 75vh;
+    overflow-y: scroll;
+}
+
+.posts::-webkit-scrollbar{
+    width: 0;
+    background-color: transparent;
+}
+
+.posts-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.messages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#messageText{
+    width: 1000px;
+    resize: none;
+    font-size: 16px;
+    border: 1px solid silver;
+    border-radius: 8px;
+}
+
+.post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.3);
+}
+
+.liked{
+    background-color:rgba(192, 192, 192, 0.1)
+}
+
+.messages-sending-box{
+    margin-top: 10px;
+}
+
+#messageSending{
+    height: 30px;
+    max-width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: silver 1px solid;
+    background: linear-gradient(90deg, #1485e6,#00c2f0,#2ceeb8);
+    color: white;
+}
+
+.opacity-half{
+    opacity: 0.7;
+}
+
+.delete-message{
+    background:transparent;
+    border: 0;
+    position: relative;
+}
+
+.delete-message img{
+    position: absolute;
+    top: -14px;
+    left: -24px;
+}
+
+.delete-message img:hover{
+    cursor: pointer;
+    animation: hoverIcon 2s infinite;
+}
+
+.like-message{
+    background:transparent;
+    border: 0;
+    position: relative;
+}
+
+.like-message img{
+    position: absolute;
+    top: -14px;
+    left: -4px;
+}
+
+.like-message img:hover{
+    cursor: pointer;
+    animation: hoverIcon 2s infinite;
+}
+
+@keyframes hoverIcon {
+    0%{width: 24px; height: 24px}
+    40%{width: 28px; height: 28px}
+    100%{width: 24px; height: 24px}
+}
+
+.filter-liked{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    padding-bottom: 10px;
+}
+
+.switch {
+position: relative;
+display: inline-block;
+width: 40px;
+height: 20px;
+}
+
+.switch input {
+    display:none;
+}
+
+.toggle {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+border-radius: 10px;
+border: 1px solid #1F204140;
+}
+
+.toggle:before {
+position: absolute;
+content: "";
+height: 12px;
+width: 12px;
+left: 3px;
+top: 3px;
+background-color: #1F204140;
+-webkit-transition: .4s;
+transition: .4s;
+border-radius: 50%;
+}
+
+input:checked + .toggle {
+background: linear-gradient(90deg, #BC9CFF, #8BA4F9);
+}
+
+input:checked + .toggle:before {
+-webkit-transform: translateX(18px);
+-ms-transform: translateX(18px);
+transform: translateX(18px);
+}
+
+.search{
+    border-radius: 8px;
+    border:rgba(192, 192, 192, 1) 1px solid;
+    width: 230px;
+}
+
+.div-time{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: #818CB3;
+    font-size: 10px;
+}
+
+.buttons-on-message{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    background: linear-gradient(90deg, #85b0f2,#00ddcf,#ede067);
+    color: white;
+    min-height: 10vh;
+    max-height: auto;
+}
+
+.footer-main{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    min-height: 10vh;
+    max-height: auto;
+}
+
+.contacts-list{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.contact-img{
+    padding-left: 5px;
+    display:block;
+    cursor: pointer;
+}
+
+/* .contact-img object{
+    position: relative;
+    z-index: ;
+} */
